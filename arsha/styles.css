@@ -1,0 +1,71 @@
+:root {
+  --primary: #37517e;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.top {
+  color: white !important;
+  background-color: var(--primary);
+}
+
+.top a {
+  color: white !important;
+  text-transform: capitalize;
+}
+
+.anim {
+  animation: move 1s linear infinite alternate;
+}
+
+.text-blue {
+  color: var(--primary);
+}
+
+.bg-blue {
+  background-color: var(--primary);
+}
+
+.gray {
+  width: 15%;
+  height: 1px;
+  background-color: lightgray;
+  margin: auto;
+  position: relative;
+}
+
+.blue {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 2px;
+  background-color: var(--bs-info);
+  width: 30%;
+  margin: auto;
+}
+
+@keyframes move {
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+.my-img {
+  filter: grayscale(100%);
+  transition: all 0.4s;
+}
+
+.my-img:hover {
+  filter: grayscale(0);
+  scale: 1.1;
+}
+
+@media only screen and (max-width: 992px) {
+  .front {
+    flex-direction: column-reverse;
+  }
+}

@@ -1,0 +1,324 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+nav {
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  background-color: black;
+  z-index: 222;
+}
+
+nav,
+.left,
+.right {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+}
+
+.delivery,
+.pickup {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  text-transform: uppercase;
+  background-color: #1c1816;
+  padding: 0.3rem 1rem;
+  border-radius: 5px;
+  letter-spacing: 1px;
+}
+
+.delivery {
+  border: 2px solid #ea002a;
+}
+
+.bucket {
+  position: relative;
+}
+
+.number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+}
+
+.login button {
+  padding: 0.7rem 1rem;
+  background-color: #ea002a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.menu-icon {
+  font-size: 2rem;
+}
+
+.front {
+  background-image: url("https://www.kfcpakistan.com/images/ff635690-fc69-11ee-a8ff-6572f1a41e07-995x356Mighty,KentuckyandStacker_desktop_image-2024-04-17032428.jpg");
+  height: 75vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.reorder {
+  width: 50%;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #ea002a;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  display: block;
+  font-weight: bolder;
+}
+
+.explore {
+  width: 70%;
+  margin: 2rem auto;
+}
+
+.e-cards {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding: 2rem;
+}
+
+.explore-top h2 {
+  text-transform: uppercase;
+}
+
+.explore-top hr {
+  width: 5%;
+  background-color: #ea002a;
+  height: 3px;
+  border: none;
+  margin-top: 0.3rem;
+}
+.e-card hr {
+  width: 15%;
+  background-color: #ea002a;
+  height: 3px;
+  border: none;
+  margin-top: 0.3rem;
+  margin: 0.7rem auto 0 auto;
+}
+
+.e-card {
+  background-color: #1c1816;
+  border-radius: 50% 50% 10px 50%;
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+  transition: all 0.4s;
+}
+
+.dot {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 50%;
+  bottom: 10px;
+  right: 10px;
+}
+
+.e-card:hover {
+  transform: translateY(-20px);
+}
+
+.seller {
+  width: 70%;
+  margin: 2rem auto;
+}
+
+.s-cards {
+  display: flex;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.seller-top h2 {
+  text-transform: uppercase;
+}
+
+.seller-top hr {
+  width: 5%;
+  background-color: #ea002a;
+  height: 3px;
+  border: none;
+  margin-top: 0.3rem;
+}
+
+.s-card {
+  background-color: #1c1816;
+  padding-left: 1rem;
+}
+
+.s-card h2 {
+  text-transform: capitalize;
+}
+
+.red-dots {
+  display: flex;
+  gap: 0.3rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.r-dot {
+  width: 15px;
+  height: 22px;
+  background-color: #ea002a;
+}
+
+.price {
+  background-color: #ea002a;
+  text-align: right;
+  clip-path: polygon(100% 1%, 100% 50%, 100% 100%, 0% 100%, 20% 51%, 0% 0%);
+  width: 30%;
+  margin-left: auto;
+}
+
+.price small {
+  font-size: 0.9rem;
+}
+
+.deals {
+  width: 70%;
+  margin: 2rem auto;
+}
+
+.d-cards {
+  display: flex;
+}
+.deals-top h2 {
+  text-transform: uppercase;
+}
+
+.deals-top hr {
+  width: 5%;
+  background-color: #ea002a;
+  height: 3px;
+  border: none;
+  margin-top: 0.3rem;
+}
+
+.d-cards {
+  display: flex;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.d-card {
+  background-color: #1c1816;
+}
+
+.d-card img {
+  margin-top: -3rem;
+}
+
+.d-card h4,
+.d-card p {
+  margin: 0.5rem 0;
+}
+.d-card h5 {
+  margin: 1rem 0;
+}
+
+.d-card button {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #ea002a;
+  color: white;
+  font-weight: bold;
+  margin: auto;
+  display: block;
+  margin-bottom: -5%;
+}
+
+.images {
+  width: 70%;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.top,
+.bottom {
+  display: flex;
+  gap: 1rem;
+}
+
+.last-image {
+  width: 100%;
+  background-color: #1c1816;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border-radius: 10px;
+}
+
+.images img {
+  border-radius: 10px;
+}
+
+footer {
+  background-color: #1c1816;
+  padding: 2rem;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+.footer-bottom ul {
+  list-style: none;
+  text-transform: capitalize;
+}
+
+.footer-bottom ul li {
+  margin: 0.5rem 0;
+}
+
+.footer-bottom ul:last-child {
+  display: flex;
+}
