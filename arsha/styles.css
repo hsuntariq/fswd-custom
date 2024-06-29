@@ -1,5 +1,6 @@
 :root {
   --primary: #37517e;
+  --smooth: all 0.4s;
 }
 
 * {
@@ -54,6 +55,10 @@
   }
 }
 
+.text-sm {
+  font-size: 0.8rem;
+}
+
 .my-img {
   filter: grayscale(100%);
   transition: all 0.4s;
@@ -64,8 +69,52 @@
   scale: 1.1;
 }
 
+.img-background {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://bootstrapmade.com/demo/templates/Arsha/assets/img/cta-bg.jpg")
+      fixed;
+  color: white;
+}
+
+.my-btn {
+  transition: var(--smooth);
+  font-weight: bold;
+}
+
+.my-btn:hover {
+  background-color: var(--bs-info);
+  color: white;
+}
+
+.bottom-section {
+  bottom: 0;
+  transition: var(--smooth);
+  transform: translateY(80px);
+  background-color: rgba(255, 255, 255, 0.6);
+  /* opacity: 0; */
+  /* z-index: -3; */
+}
+
+.my-image {
+  overflow: hidden;
+}
+
+.my-image img {
+  /* margin: 0 !important; */
+}
+
+.my-image:hover .bottom-section {
+  transform: translateY(0);
+  opacity: 1;
+  z-index: 3;
+}
+
 @media only screen and (max-width: 992px) {
   .front {
     flex-direction: column-reverse;
+  }
+
+  .my-img2 {
+    margin: auto;
   }
 }
